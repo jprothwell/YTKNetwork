@@ -23,5 +23,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.framework = "CFNetwork"
 
-  s.dependency "AFNetworking", "~> 3.0", :subspecs => ['Reachability', 'Serialization', 'Security', 'NSURLSession']
+  s.dependency "AFNetworking/Serialization", "~> 3.0"
+  s.dependency "AFNetworking/Security", "~> 3.0"
+  s.dependency "AFNetworking/Reachability", "~> 3.0"
+  s.dependency "AFNetworking/NSURLSession", "~> 3.0"
 end
