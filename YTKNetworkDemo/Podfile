@@ -1,6 +1,9 @@
 target 'YTKNetworkDemo' do
     pod 'YTKNetwork', :path => '../'
-    pod 'AFNetworking', '~> 3.1'
+    pod 'AFNetworking/Serialization', '~> 3.0'
+    pod 'AFNetworking/Security', '~> 3.0'
+    pod 'AFNetworking/Reachability', '~> 3.0'
+    pod 'AFNetworking/NSURLSession', '~> 3.0'
 end
 
 target 'YTKNetworkDemoTests' do

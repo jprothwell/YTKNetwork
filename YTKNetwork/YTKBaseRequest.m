@@ -25,11 +25,17 @@
 #import "YTKNetworkAgent.h"
 #import "YTKNetworkPrivate.h"
 
-#if __has_include(<AFNetworking/AFNetworking.h>)
-#import <AFNetworking/AFNetworking.h>
-#else
-#import "AFNetworking.h"
-#endif
+//#if __has_include(<AFNetworking/AFNetworking.h>)
+//#import <AFNetworking/AFNetworking.h>
+//#else
+//#import "AFNetworking.h"
+//#endif
+#import <AFNetworking/AFSecurityPolicy.h>
+#import <AFNetworking/AFURLSessionManager.h>
+#import <AFNetworking/AFURLRequestSerialization.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
+
 
 NSString *const YTKRequestValidationErrorDomain = @"com.yuantiku.request.validation";
 

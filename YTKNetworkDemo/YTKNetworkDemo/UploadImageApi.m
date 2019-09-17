@@ -7,7 +7,13 @@
 //
 
 #import "UploadImageApi.h"
-#import "AFNetworking.h"
+//#import "AFNetworking.h"
+#import <AFNetworking/AFSecurityPolicy.h>
+#import <AFNetworking/AFURLSessionManager.h>
+#import <AFNetworking/AFURLRequestSerialization.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
+
 
 @implementation UploadImageApi {
     UIImage *_image;

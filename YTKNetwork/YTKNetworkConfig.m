@@ -24,11 +24,16 @@
 #import "YTKNetworkConfig.h"
 #import "YTKBaseRequest.h"
 
-#if __has_include(<AFNetworking/AFNetworking.h>)
-#import <AFNetworking/AFNetworking.h>
-#else
-#import "AFNetworking.h"
-#endif
+//#if __has_include(<AFNetworking/AFNetworking.h>)
+//#import <AFNetworking/AFNetworking.h>
+//#else
+//#import "AFNetworking.h"
+//#endif
+#import <AFNetworking/AFSecurityPolicy.h>
+#import <AFNetworking/AFURLSessionManager.h>
+#import <AFNetworking/AFURLRequestSerialization.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 @implementation YTKNetworkConfig {
     NSMutableArray<id<YTKUrlFilterProtocol>> *_urlFilters;
